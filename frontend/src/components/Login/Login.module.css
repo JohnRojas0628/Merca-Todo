@@ -1,0 +1,9 @@
+.login{
+    display: inline-block;
+    flex-direction: column;
+    
+}
+
+.btn{
+    background-color: rgba(242, 136, 3, 1);
+}
