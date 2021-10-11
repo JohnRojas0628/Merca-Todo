@@ -77,8 +77,5 @@ const Login = () => {
                 <Link to={router}><button className={styles.btn}>Acceder</button></Link>
             </form>
             <img className={styles.cesta} src={Cesta} alt="cesta"/>
-        </div>
-    )
-}
-
+              
 export default Login
