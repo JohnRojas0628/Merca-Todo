@@ -1,0 +1,45 @@
+.heder{
+    
+    width: 100%;
+    height: 10vh;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    align-items:center ;
+    justify-content:space-around;
+   
+}
+
+.container{
+ 
+    width: 100vw;
+    height: 100vh;
+    margin: 0px 100px 0px 0px;
+    
+}
+
+.Logo{
+    width: 20vw;
+}
+.input{
+    width: 45vw;
+    height:3vh;
+    border-radius: 10px;
+   
+}
+.Filtro{
+width: 20vw;
+
+
+
+}
+.con_Cesta{
+    display: flex;
+    justify-content: flex-start;
+}
+.Cesta{
+    width:150px ;
+    height:115px;
+}
+@media (max-width: 600px) {
+   
+  }
