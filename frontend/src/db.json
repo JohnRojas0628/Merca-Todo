@@ -1,0 +1,121 @@
+[
+  
+  {
+    "id": 1,
+    "producto": "Carnicos ",
+    "proveedor": "Pedro",
+    "existencia": "6",
+    "descripcion":  "carne de res ",
+    "categoria":  "carnicos "
+
+    
+  
+  },
+  {
+    "id": 2,
+    "producto": "Lacteos",
+    "proveedor": "Juan sas",
+    "existencia": "19",
+    "descripcion":  "Quesos,yogurt,leche entera y desactosada",
+    "categoria":  "Lacteos "
+  },
+
+  {
+    "id": 3,
+    "producto": "Embutidos ",
+    "proveedor": "pedro",
+    "existencia": "6",
+    "descripcion":  "Jamones,Salchichas",
+    "categoria": "Embutidos"
+  
+  },
+
+  {
+    "id": 4,
+    "producto": "Licores ",
+    "proveedor": "pedro",
+    "existencia": "6",
+    "descripcion":  "licores",
+    "categoria": "Licores"
+  
+  },
+
+  {
+    "id": 5,
+    "producto": "Bebidas ",
+    "proveedor": "pedro",
+    "existencia": "6",
+    "descripcion":  "Gaseosas,jugos",
+    "categoria": "Bebidas"
+  
+  },
+  {
+    "id": 6,
+    "producto": "Grano",
+    "proveedor": "pedro",
+    "existencia": "6",
+    "descripcion":  "Maiz,Lenteja,Frijol",
+    "categoria": "Grano"
+  
+  },
+  {
+    "id": 7,
+    "producto": "Enlatados ",
+    "proveedor": "pedro",
+    "existencia": "6",
+    "descripcion":  "Atun,Maiz tierno",
+    "categoria": "Enlatados"
+  
+  },
+  {
+    "id": 8,
+    "producto": "Frutas",
+    "proveedor": "pedro",
+    "existencia": "6",
+    "descripcion":  "Manzana,Pera",
+    "categoria": "Frutas"
+
+  
+  },
+  {
+    "id": 9,
+    "producto": "Verduras",
+    "proveedor": "pedro",
+    "existencia": "6",
+    "descripcion":  "Zanahoria",
+    "categoria": "Verduras"
+
+  
+  },
+  {
+    "id": 10,
+    "producto": "Dulcerias",
+    "proveedor": "pedro",
+    "existencia": "6",
+    "descripcion":  "Gomas",
+    "categoria": "Dulcerias"
+
+  
+  },
+  {
+    "id": 11,
+    "producto": "Elementos de Aseo",
+    "proveedor": "pedro",
+    "existencia": "6",
+    "descripcion":  "Clorox",
+    "categoria": "Aseo"
+    
+
+    
+
+  
+  }
+
+
+
+
+
+
+
+
+]   
