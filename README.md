@@ -39,10 +39,10 @@ _Aquí debajo dejamos el link del proyecto desplegado_
 ## Collaboration 🤝🏻
 ***
 Este proyecto fue realizado en colaboracion de :
-David Bedoya, github: https://github.com/davidB2ya
-Sebastian Landeros, github: https://github.com/landeros31
-Andres Felipe, github: https://github.com/Felipe0206
-Angelica Herrera, https://github.com/angelicahg
+* **David Bedoya, github: https://github.com/davidB2ya**
+* **Sebastian Landeros, github: https://github.com/landeros31**
+* **Andres Felipe, github: https://github.com/Felipe0206**
+* **Angelica Herrera, https://github.com/angelicahg**
 
 ## Agradecimientos 👏
 * **Moises Ariza** - *Formador* 
