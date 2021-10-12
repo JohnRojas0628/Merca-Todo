@@ -54,7 +54,3 @@ Este proyecto fue realizado en colaboracion de :
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
 * Da las gracias públicamente 🤓.
 * etc.
-
----
-⌨️ con ❤️ por [David Bedoya] (https://github.com/davidB2ya) and [Jennifer Rojas]  (https://github.com/jenniferRojas)  😊 
-# Getting Started with Create Angular
