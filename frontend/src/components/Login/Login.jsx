@@ -5,6 +5,7 @@ import Logo from '../../assets/Logo Merca Todo.png';
 import User from '../../assets/ei_user.png';
 import Password from '../../assets/Vector.png';
 import Cesta from '../../assets/cesta.png';
+import Cerezas from '../../assets/Cerezas.png'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 import { Input } from './Input/Input';
@@ -77,7 +78,8 @@ const Login = () => {
                 <Link to={router}><button className={styles.btn}>Acceder</button></Link>
             </form>
             <img className={styles.cesta} src={Cesta} alt="cesta"/>
-       </div>
+            <img className={styles.cerezas} src={Cerezas} alt="cerezas"/>
+        </div>
     )
 }
 
