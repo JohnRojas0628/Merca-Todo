@@ -47,6 +47,8 @@ Este proyecto fue realizado en colaboracion de :
 ## Agradecimientos 👏
 * **Moises Ariza** - *Formador* 
 * **Juliana Fajardo** - *Formadora*
+* **Diego Romero** - *Formadora*
+* **Lorena Guerrero** - *Formadora*
 
 ## Expresiones de Gratitud 🎁
 
