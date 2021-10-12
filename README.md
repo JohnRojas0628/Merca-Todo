@@ -42,7 +42,7 @@ Este proyecto fue realizado en colaboracion de :
 * **David Bedoya, github: https://github.com/davidB2ya**
 * **Sebastian Landeros, github: https://github.com/landeros31**
 * **Andres Felipe, github: https://github.com/Felipe0206**
-* **Angelica Herrera, https://github.com/angelicahg**
+* **Angelica Herrera, github: https://github.com/angelicahg**
 
 ## Agradecimientos 👏
 * **Moises Ariza** - *Formador* 
