@@ -1,16 +1,19 @@
 import Logo from '../../assets/Logo Merca Todo.png'
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './CRUD.module.css'
 import cesta from '../../assets/cesta.png'
 import cerrar from '../../assets/cerrar.png'
 import * as MarketServer from "./marketserver";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import { useState } from "react";
 
 
 const MarketForm = () => {
 
   const history = useHistory();
+  const params=useParams();
+
+  console.log(params)
 
 
   const initialState = { id: 0, pro_name: "", pro_provider: "", pro_existences: 0, pro_date: 0, pro_description: "", pro_category: "" };
@@ -27,11 +30,16 @@ const MarketForm = () => {
     console.log(users)
     try {
       let res;
-      res = await MarketServer.registerProduct(users);
-      const data = await res.json();
-      if (data.message === "Success") {
-        setUsers(initialState);
+      if(!params.id){
+        res = await MarketServer.registerProduct(users);
+        const data = await res.json();
+        if (data.message === "Success") {
+          setUsers(initialState);
+        }
+      }else{
+          await MarketServer.updateProduct(params.id,users)
       }
+      
       history.push("/crud");
 
     }
@@ -41,9 +49,23 @@ const MarketForm = () => {
   };
 
 
+const getProduct=async(productId)=>{
+    try{
+        const res=await MarketServer.getProduct(productId);
+        const data=await res.json()
+        console.log(data)
+        const {pro_name,pro_provider,pro_existences,pro_date,pro_description,pro_category}=data.producto
+        setUsers({pro_name,pro_provider,pro_existences,pro_date,pro_description,pro_category})
+    }catch(error){
+        console.log(error)
+    }
+}
 
-
-
+ useEffect(()=>{
+if(params.id){
+    getProduct(params.id)
+}
+ },[])
 
   return (
     <div className={styles.log}>
@@ -101,7 +123,7 @@ const MarketForm = () => {
           value={users.pro_category} onChange={handleInputChange}
         />
 
-        <button className={styles.adds}>Agregar</button>
+        <button className={styles.adds}>Editar</button>
 
 
 

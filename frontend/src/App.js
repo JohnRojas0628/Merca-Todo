@@ -6,6 +6,7 @@ import Stock from './components/Stock/Stock';
 import CRUD from './components/Stock-CRUD/CRUD';
 import Add from './components/Add-Products/Add';
 import Footer from './components/Footer/Footer';
+import Update from './components/Stock-CRUD/marketform'
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
           <Route path='/stock'><Stock/></Route>
           <Route path='/crud'><CRUD/></Route>
           <Route path='/add'><Add/></Route>
-          <Route path="/updateProduct/:id"><Add /></Route>
+          <Route path="/updateProduct/:id"><Update/></Route>
 
           
         </Switch>
