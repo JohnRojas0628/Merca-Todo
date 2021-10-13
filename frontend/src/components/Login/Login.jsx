@@ -58,6 +58,7 @@ const Login = () => {
     }
 
     return (
+        <div className={styles.container}>
         <div className={styles.login}>
             <img className={styles.logo} src={Logo} alt="Logo"/>
             <h1 className={styles.welcome}>Bienvenidos a tu <br/>Mercado Favorito</h1>
@@ -84,6 +85,7 @@ const Login = () => {
             </form>
             <img className={styles.cesta} src={Cesta} alt="cesta"/>
             <img className={styles.cerezas} src={Cerezas} alt="cerezas"/>
+        </div>
         </div>
     )
 }
