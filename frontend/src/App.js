@@ -6,6 +6,7 @@ import Stock from './components/Stock/Stock';
 import CRUD from './components/Stock-CRUD/CRUD';
 import Add from './components/Add-Products/Add';
 import Footer from './components/Footer/Footer';
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,9 @@ function App() {
           <Route path='/stock'><Stock/></Route>
           <Route path='/crud'><CRUD/></Route>
           <Route path='/add'><Add/></Route>
+          
         </Switch>
+      
         <Footer/>
     </div>
   );

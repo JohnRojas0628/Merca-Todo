@@ -3,6 +3,9 @@ import styles from './Stock.module.css';
 import Logo from '../../assets/Logo Merca Todo.png';
 import Cesta from '../../assets/cesta.png';
 import Filtro from '../../assets/Filtro.png';
+import Card from './CardOne/CardOne';
+
+
 const Stock = () => {
     return (
         <div className={styles.container}>
@@ -18,6 +21,11 @@ const Stock = () => {
             <div className={styles.cont_Cesta}>
             <img src={Cesta} alt="Cesta" className={styles.Cesta}/>
             </div>
+
+            <div>
+                <Card/>
+            </div>
+            
         </div>
     )
 }
