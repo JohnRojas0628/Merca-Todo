@@ -1,11 +1,12 @@
 .heder{
     
     width: 100%;
-    height: 10vh;
+    height: 30vh;
     margin: 0px 0px 0px 0px;
     display: flex;
     align-items:center ;
     justify-content:space-around;
+    
    
 }
 
@@ -13,21 +14,23 @@
  
     width: 100vw;
     height: 100vh;
-    margin: 0px 100px 0px 0px;
+   
     
 }
 
 .Logo{
-    width: 20vw;
+    width: 120px;
+    height: 150px;
 }
 .input{
-    width: 45vw;
-    height:3vh;
+    width: 250px;
+    height:30px;
     border-radius: 10px;
    
 }
 .Filtro{
-width: 20vw;
+    width:80px;
+    height: 100px;
 
 
 
@@ -37,9 +40,34 @@ width: 20vw;
     justify-content: flex-start;
 }
 .Cesta{
-    width:150px ;
-    height:115px;
+    width:100px ;
+    height:145px;
+    position: fixed;
+    bottom: 40px;
+    left: 30px;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 780px) {
+
+    .Logo{
+        width: 100px;
+        height: 130px;
+    }
+    .input{
+        width: 200px;
+        height:30px;
+        
+       
+    }
+    .Filtro{
+        width: 60px;
+        height: 80px;
+    
+    
+    
+    }
    
-  }
+    
+    
+
+}
