@@ -33,7 +33,7 @@ const CRUD = () => {
 
   return (
 
-    <div className="Crud">
+    <div className={styles.Crud}>
       <div className="crud1">
         <img className={styles.logo1} src={Logo} alt="logo" />
         <img className={styles.agregar} src={agregar} alt="logo" />
