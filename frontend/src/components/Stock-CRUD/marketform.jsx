@@ -129,8 +129,6 @@ if(params.id){
 
 
       </form>
-      <img className={styles.cesta} src={cesta} alt="cesta" />
-
     </div>
   )
 

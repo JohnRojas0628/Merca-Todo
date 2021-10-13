@@ -5,7 +5,6 @@
 .log{
     background-color: rgba(228, 240, 248, 1);
     text-align: center;
-    overflow-y: hidden;
     display:flex;
     align-items: center;
     flex-direction: column;

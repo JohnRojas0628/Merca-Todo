@@ -45,7 +45,9 @@ Este proyecto fue realizado en colaboracion de :
 * **Angelica Herrera, github: https://github.com/angelicahg**
 
 ## Agradecimientos 👏
-* **Juliana Fajardo** - *Formadora `Gracias por compartir tu experiencia`*
+* **Juliana Fajardo** - *Formadora `Gracias por compartir tu experiencia`*👏
+* Gracias por este comando `CI=false && npm run build 🎉🎊✨�
+`
 * **Moises Ariza** - *Formador* 
 * **Diego Romero** - *Formadora*
 * **Lorena Guerrero** - *Formadora*

@@ -32,7 +32,7 @@ export const deleteProduct = async (productosId) => {
   });
 };
 
-export const updateProduct = async (productosId, updatedProduct) => {
+export const updateProduct = async (productosId, updateProduct) => {
   return await fetch(`${API_URL}${productosId}`, {
     method: 'PUT',
     headers: {
