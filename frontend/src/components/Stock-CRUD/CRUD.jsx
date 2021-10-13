@@ -41,13 +41,14 @@ const CRUD = () => {
   return (
 
     <div className="Crud">
-      <div className="crud1">
+      <div className={styles.crud1}>
         <img className={styles.logo1} src={Logo} alt="logo" />
         <img className={styles.agregar} src={agregar} alt="logo" />
 
 
       </div>
       <table>
+      <fil span="2" className={styles.fondo}></fil>
         <thead>
           <tr>
             <th>Id</th>
@@ -60,8 +61,9 @@ const CRUD = () => {
             
           </tr>
         </thead>
+        
         <tbody>
-
+        
           {users.map((producto, index) =>
             <tr key={index}>
               <th>{producto.id}</th>
@@ -72,6 +74,7 @@ const CRUD = () => {
               <th>{producto.pro_description}</th>
               <th>{producto.pro_category}</th>
               <td>
+              
                 <div className={styles.containerbt}>
                 <button onClick={() => history.push(`/updateProduct/${producto.id}`)} className={styles.update}>
                   Update
@@ -83,9 +86,11 @@ const CRUD = () => {
                 </div></td>
                 
             </tr>
+            
           )}
 
         </tbody>
+       
       </table>
     </div>
 
