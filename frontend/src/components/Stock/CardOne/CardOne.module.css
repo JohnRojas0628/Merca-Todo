@@ -1,4 +1,89 @@
-.contCard{
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Rye&display=swap');
+
+.container{
+    width: 360px;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    background-color: azure;
+    font-family: roboto, serif;
+}
+
+.title{
+    font-size: 18px;
+    font-family: 'Chelsea Market', cursive;
+    color: rgba(242, 136, 3, 1);
+    background: transparent;
+    margin-left: 10px;
+}
+
+.date{
+    font-family: roboto, serif;
+    background: transparent;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.cantd{
+    background: rgba(242, 136, 3, 1);
+    width:50px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 285px;
+    margin-top: -20px;
+}
+
+.img{
+    width:350px;
+    height:200px;
+    background: transparent;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.containerDetails{
+    background:transparent;
+    display:flex;
+    direction: column;
+    gap:4rem;
+    font-size: 12px;
+    padding:10px;
+}
+
+.providerContainer{
+    background:transparent;
+}
+
+.categoryContainer{
+    background:transparent;
+}
+
+.providerTxt{
+    background:transparent;
+   
+}
+
+.provider{
+    background:transparent;
+   
+}
+
+.categoryTxt{
+    background:transparent;
+}
+
+.category{
+    background:transparent;
     
-    background-color: brown;
+} 
+
+.descripcion{
+    font-size:18px;
+    background:transparent;
+    padding:10px;
+}
+
+.sentence{
+    background:transparent;
 }
