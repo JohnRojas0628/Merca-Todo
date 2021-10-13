@@ -45,6 +45,7 @@ const Stock = () => {
                     onChange={(e)=> inputChange(e)} 
                     placeholder={"Buscar producto"} 
                     type="search"/>
+                    
                 <img src={Filtro} alt="Filtro" className={styles.Filtro}/>
             </div>
             <div className={styles.products}>
