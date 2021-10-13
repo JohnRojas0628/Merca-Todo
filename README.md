@@ -33,7 +33,7 @@ Mozilla Firefox
 _Aquí debajo dejamos el link del proyecto desplegado_
                  👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻
 
-**https://merca-todo.vercel.app/**
+**https://merca-todo-git-develop-merca-todo.vercel.app/**
 
 
 ## Collaboration 🤝🏻

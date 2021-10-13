@@ -70,7 +70,8 @@ background-color: transparent;
 }
 .bcerrar{
    background-color: transparent;
-    
+   border: none;
+   cursor: pointer;
 }
 .cesta{
     position: fixed;
