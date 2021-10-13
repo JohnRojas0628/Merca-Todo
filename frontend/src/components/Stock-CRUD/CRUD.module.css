@@ -9,6 +9,10 @@
   width: 80px;
   
 }
+.bcerrar{
+  border:none;
+  cursor: pointer;
+}
 .log{
   
   display: flex;
@@ -32,6 +36,7 @@ table tbody tr:nth-child(even) {
 background-color: rgba(147, 166, 5, 1);
 color: white;
 border-radius: 5px;
+cursor: pointer;
 
 }
 .update:focus{
@@ -46,6 +51,7 @@ border-radius: 5px;
   background-color: #F28803;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 .containerbt{
   display: flex;
@@ -172,6 +178,7 @@ background-color: transparent;
   border-radius: 5px;
   border: none;
   text-align: 20px;
+  cursor: pointer;
 }
 .bcerrar{
  background-color: transparent;

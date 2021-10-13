@@ -75,7 +75,7 @@ const CRUD = () => {
               
                 <div className={styles.containerbt}>
                 <button onClick={() => history.push(`/updateProduct/${producto.id}`)} className={styles.update}>
-                  Update
+                  Editar
                 </button>
 
 
