@@ -6,6 +6,7 @@ import cerrar from '../../assets/cerrar.png'
 import * as MarketServer from "./marketserver";
 import { useHistory, useParams } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const MarketForm = () => {
@@ -70,7 +71,7 @@ if(params.id){
   return (
     <div className={styles.log}>
       <div className={styles.containercerrar}>
-        <img className={styles.cerrar} src={cerrar} alt="cerrar" />
+      <Link to={"/crud"}><button className={styles.bcerrar}><img className={styles.cerrar} src={cerrar} alt="cerrar"/> </button></Link>
       </div>
       <img className={styles.logom} src={Logo} alt="Logo" />
 
