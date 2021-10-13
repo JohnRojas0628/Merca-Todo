@@ -4,6 +4,7 @@ import Logo from '../../assets/Logo Merca Todo.png';
 import Filtro from '../../assets/Filtro.png';
 import Card from './CardOne/CardOne';
 import * as StockServer from './StockServer'
+import { Link } from "react-router-dom";
 
 const Stock = () => {
 
@@ -39,7 +40,7 @@ const Stock = () => {
     return (
         <div className={styles.container}>
             <div className={styles.header}>
-                <img src={Logo} alt="Logo" className={styles.Logo}/> 
+                <Link to={"/"}><img src={Logo} alt="Logo" className={styles.Logo}/></Link>
                 <input  className={styles.input}
                     onChange={(e)=> inputChange(e)} 
                     placeholder={"Buscar producto"} 

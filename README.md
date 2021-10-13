@@ -33,7 +33,7 @@ Mozilla Firefox
 _Aquí debajo dejamos el link del proyecto desplegado_
                  👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻
 
- **https://** 
+**https://merca-todo-git-develop-merca-todo.vercel.app/**
 
 
 ## Collaboration 🤝🏻
@@ -45,8 +45,8 @@ Este proyecto fue realizado en colaboracion de :
 * **Angelica Herrera, github: https://github.com/angelicahg**
 
 ## Agradecimientos 👏
+* **Juliana Fajardo** - *Formadora `Gracias por compartir tu experiencia`*
 * **Moises Ariza** - *Formador* 
-* **Juliana Fajardo** - *Formadora*
 * **Diego Romero** - *Formadora*
 * **Lorena Guerrero** - *Formadora*
 

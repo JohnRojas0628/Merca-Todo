@@ -2,12 +2,10 @@ import React from 'react';
 import Logo from '../../assets/Logo Merca Todo.png'
 import styles from './CRUD.module.css'
 import agregar from '../../assets/add.svg'
-
 import { Link } from "react-router-dom";
-
 import { useEffect, useState } from 'react';
 import * as MarketServer from "./marketserver";
-import { useHistory, useParams } from "react-router";
+import { useHistory } from "react-router";
 
 const CRUD = () => {
   const history = useHistory()
@@ -42,9 +40,9 @@ const CRUD = () => {
 
     <div className="Crud">
       <div className={styles.crud1}>
-        <img className={styles.logo1} src={Logo} alt="logo" />
-        <img className={styles.agregar} src={agregar} alt="logo" />
-
+        <Link to={"/"}><img className={styles.logo1} src={Logo} alt="logo" /></Link>
+        <Link to={"/add"}><img className={styles.agregar} src={agregar} alt="logo" /></Link>
+        
 
       </div>
       <table>
