@@ -3,6 +3,9 @@ const API_URL = "https://cryptic-headland-77186.herokuapp.com/productos/";
 export const listProduct = async () => {
   return await fetch(API_URL);
 };
+export const getProduct = async (productId) => {
+  return await fetch(`${API_URL}${productId}`);
+};
 
 export const registerProduct = async (newProducto) => {
   return await fetch(API_URL, {
@@ -37,7 +40,7 @@ export const updateProduct = async (productosId, updatedProduct) => {
     },
     body: JSON.stringify({
       "pro_name": String(updateProduct.pro_name).trim(),
-      "pro_provider": parseInt(updateProduct.pro_provider),
+      "pro_provider": String(updateProduct.pro_provider),
       "pro_existences": String(updateProduct.pro_existences),
       "pro_date": String(updateProduct.pro_date),
       "pro_description": String(updateProduct.pro_description),
