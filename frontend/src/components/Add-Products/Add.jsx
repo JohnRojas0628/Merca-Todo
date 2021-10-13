@@ -5,6 +5,7 @@ import cesta from '../../assets/cesta.png'
 import cerrar from '../../assets/cerrar.png' 
 import *as Addserver from './AddServer'
 import {useHistory} from 'react-router'
+import { Link } from "react-router-dom";
 
 const Add = () => { 
     const history=useHistory();
@@ -39,7 +40,7 @@ const Add = () => {
     return ( 
         <div className={styles.log}> 
             <div className={styles.containercerrar}> 
-            <button className={styles.bcerrar}><img className={styles.cerrar} src={cerrar} alt="cerrar"/> </button>
+            <Link to={"/crud"}><button className={styles.bcerrar}><img className={styles.cerrar} src={cerrar} alt="cerrar"/> </button></Link>
                 
             </div> 
            
