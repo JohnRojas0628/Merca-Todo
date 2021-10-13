@@ -1,5 +1,6 @@
-*{
-  background-color: rgba(228, 240, 248, 1); 
+
+.Crud{
+  background-color: rgba(228, 240, 248, 1);
 }
 
 .logo1 {
@@ -11,7 +12,7 @@
 
 .agregar{
   width: 30px;
- right: 10spx;
+  right: 10px;
   position:fixed;
   top: 30px;
 }
