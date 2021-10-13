@@ -4,31 +4,38 @@ import styles from './CRUD.module.css'
 import agregar from '../../assets/add.svg'
 
 import { Link } from "react-router-dom";
-import data from '../../db.json'
+
 import { useEffect, useState } from 'react';
-import { deleteprod } from './marketserver';
-import * as MarketServer from './marketserver'
+import * as MarketServer from "./MarketServer";
+import { useHistory, useParams } from "react-router";
 
 const CRUD = () => {
+  const history = useHistory()
 
-  /* const [users, setUsers] = useState([]) 
 
-  useEffect(() =>{
-  listprod()
- //eslint-disable-next-line
-  },
-   [])
- 
-  const listprod = async ()=> {
-   const response = await fetch('https://jsonplaceholder.typicode.com/todos')
-   const data = await response.json()
-   setUsers(data)}
- 
-   const deleteprod = async(id)=> {
-     await MarketServer.deleteprod (id);
-     listprod();
-    } 
-  */
+  const [users, setUsers] = useState([]);
+
+  const listProduct = async () => {
+    try {
+      const res = await MarketServer.listProduct();
+      const data = await res.json();
+      setUsers(data.productos);
+      console.log(data.productos)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    listProduct();
+  }, []);
+
+  const handleDelete = async (productosId) => {
+    await MarketServer.deleteProduct(productosId);
+    listProduct();
+  };
+
+
+
 
 
   return (
@@ -37,6 +44,8 @@ const CRUD = () => {
       <div className="crud1">
         <img className={styles.logo1} src={Logo} alt="logo" />
         <img className={styles.agregar} src={agregar} alt="logo" />
+
+
       </div>
       <table>
         <thead>
@@ -51,17 +60,23 @@ const CRUD = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((user, index) =>
+
+          {users.map((producto, index) =>
             <tr key={index}>
-              <th>{user.id}</th>
-              <th>{user.producto}</th>
-              <th>{user.proveedor}</th>
-              <th>{user.existencias}</th>
-              <th>{user.descripcion}</th>
-              <th>{user.categoria}</th>
-              <th>{user.Fecha}</th>
-              <td><button className="button">Editar</button>
-                <button onClick={user.id} className="button">Eliminar</button></td>
+              <th>{producto.id}</th>
+              <th>{producto.pro_name}</th>
+              <th>{producto.pro_provider}</th>
+              <th>{producto.pro_existences}</th>
+              <th>{producto.pro_date}</th>
+              <th>{producto.pro_description}</th>
+              <th>{producto.pro_category}</th>
+              <td>
+                <button onClick={() => history.push(`/updateProduct/${producto.id}`)} className="update">
+                  Update
+                </button>
+
+
+                <button onClick={() => producto.id && handleDelete(producto.id)} className="delete">Eliminar</button></td>
 
             </tr>
           )}
