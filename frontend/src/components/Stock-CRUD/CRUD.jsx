@@ -2,12 +2,10 @@ import React from 'react';
 import Logo from '../../assets/Logo Merca Todo.png'
 import styles from './CRUD.module.css'
 import agregar from '../../assets/add.svg'
-
 import { Link } from "react-router-dom";
-
 import { useEffect, useState } from 'react';
 import * as MarketServer from "./marketserver";
-import { useHistory, useParams } from "react-router";
+import { useHistory } from "react-router";
 
 const CRUD = () => {
   const history = useHistory()
@@ -41,13 +39,14 @@ const CRUD = () => {
   return (
 
     <div className="Crud">
-      <div className="crud1">
-        <img className={styles.logo1} src={Logo} alt="logo" />
-        <img className={styles.agregar} src={agregar} alt="logo" />
-
+      <div className={styles.crud1}>
+        <Link to={"/"}><img className={styles.logo1} src={Logo} alt="logo" /></Link>
+        <Link to={"/add"}><img className={styles.agregar} src={agregar} alt="logo" /></Link>
+        
 
       </div>
       <table>
+      <fil span="2" className={styles.fondo}></fil>
         <thead>
           <tr>
             <th>Id</th>
@@ -60,8 +59,9 @@ const CRUD = () => {
             
           </tr>
         </thead>
+        
         <tbody>
-
+        
           {users.map((producto, index) =>
             <tr key={index}>
               <th>{producto.id}</th>
@@ -72,6 +72,7 @@ const CRUD = () => {
               <th>{producto.pro_description}</th>
               <th>{producto.pro_category}</th>
               <td>
+              
                 <div className={styles.containerbt}>
                 <button onClick={() => history.push(`/updateProduct/${producto.id}`)} className={styles.update}>
                   Update
@@ -83,9 +84,11 @@ const CRUD = () => {
                 </div></td>
                 
             </tr>
+            
           )}
 
         </tbody>
+       
       </table>
     </div>
 
