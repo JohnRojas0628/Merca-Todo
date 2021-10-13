@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Add.module.css'
 import Logo from '../../assets/Logo Merca Todo.png'
 import cesta from '../../assets/cesta.png'
-import cerrar from '../../assets/cerrar.png'
+import cerrar from '../../assets/cerrar.jpeg'
 
 const Add = () => {
     return (

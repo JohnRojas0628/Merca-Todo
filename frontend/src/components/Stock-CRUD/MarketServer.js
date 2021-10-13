@@ -12,8 +12,9 @@ export const registerProduct = async (newProducto) => {
     },
     body: JSON.stringify({
       "pro_name": String(newProducto.pro_name).trim(),
-      "pro_provider": String(newProducto.pro_provider),
-      "pro_existences": parseInt(newProducto.pro_existences).tri(),
+      "pro_provider": String(newProducto.pro_provider).trim(),
+      "pro_existences": String(newProducto.pro_existences).trim(),
+      "pro_date": String(newProducto.pro_date).trim(),
       "pro_description": String(newProducto.pro_description).trim(),
       "pro_category": String(newProducto.pro_category).trim(),
     })
@@ -38,6 +39,7 @@ export const updateProduct = async (productosId, updatedProduct) => {
       "pro_name": String(updateProduct.pro_name).trim(),
       "pro_provider": parseInt(updateProduct.pro_provider),
       "pro_existences": String(updateProduct.pro_existences),
+      "pro_date": String(updateProduct.pro_date),
       "pro_description": String(updateProduct.pro_description),
       "pro_category": String(updateProduct.pro_category).trim(),
 
@@ -45,6 +47,11 @@ export const updateProduct = async (productosId, updatedProduct) => {
     })
   });
 };
+
+
+
+
+
 
 
 
