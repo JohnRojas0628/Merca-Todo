@@ -1,4 +1,5 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Rye&display=swap');
+.crud{
   background-color: rgba(228, 240, 248, 1); 
 }
 
@@ -8,16 +9,37 @@
   width: 80px;
   
 }
+.update{
+background-color: rgba(147, 166, 5, 1);
+color: white;
+border-radius: 5px;
 
+}
+.update:focus{
+  outline: none;
+
+}
+.delete:focus{
+  outline: none;
+
+}
+.delete{
+  background-color: #F28803;
+  color: white;
+  border-radius: 5px;
+}
+.containerbt{
+  display: flex;
+}
 .agregar{
   width: 30px;
- right: 10spx;
+ right: 15px;
   position:fixed;
   top: 30px;
 }
 
 table{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Chelsea Market', cursive;
 }
 
 
@@ -58,3 +80,139 @@ table{
   }
 }   
  */
+
+ log{
+  background-color: rgba(228, 240, 248, 1);
+  text-align: center;
+  overflow-y: hidden;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+
+ 
+}
+
+.logom {
+  margin-top: 50px;
+  background-color: transparent;
+}
+.cerrar{
+  width: 40px;
+  height: 40px;
+}
+.containercerrar{
+height: 60px;
+display: flex;
+justify-content: right;
+width: 80%;
+align-items: center;
+background-color: transparent;
+
+}
+
+.formu{
+  background-color:rgba(228, 240, 248, 1);
+  width: 70%;
+  height: 380px;
+  left: 52px;
+  top: 352px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  /* z-index: 2; */
+}
+
+.users{
+  background-color:white;
+  width: 80%;
+  height: 10%;   
+  border: 0.5px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  text-align: start;
+ margin-bottom: 20px;
+
+}
+
+.adds{
+  
+  width: 50%;
+  height: 8%;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 20px;
+  background: #F28803;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  text-align: 20px;
+}
+.bcerrar{
+ background-color: transparent;
+  
+}
+.cesta{
+  position: fixed;
+  width: 200px;
+  height: 180px;
+  bottom: 0px;
+  left: 30px;
+  z-index: 0;
+  background-color: transparent;
+}
+
+.cerezas{
+  opacity: 0;
+}
+
+
+/* Small (sm) */ 
+@media (min-width: 600px) {
+  .formu{
+      width: 60%;
+  }
+  .cesta{
+      
+      left: 70px;
+  }
+
+
+
+  } 
+   
+  /* Medium (md) */ 
+  @media (min-width: 768px) {
+  
+      .formu{
+          width: 50%;
+      }
+      .cesta{
+      
+          left: 90px;
+      }
+  
+  } 
+   
+  /* Large (lg) */ 
+  @media (min-width: 1024px) {
+  
+      .formu{
+         width:40% ; 
+      }
+      .cesta{
+      
+          left: 260px;
+      }
+      } 
+       
+      /* Extra Large (xl) */ 
+      @media (min-width: 1280px) {
+         .formu{
+          width: 35%;
+         } 
+
+         .cesta{
+      
+          left: 380px;
+      }
+      }
