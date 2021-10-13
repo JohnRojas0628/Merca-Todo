@@ -35,6 +35,9 @@
 
 
 }
+.Menu{
+    opacity: 0;
+}
 .con_Cesta{
     display: flex;
     justify-content: flex-start;

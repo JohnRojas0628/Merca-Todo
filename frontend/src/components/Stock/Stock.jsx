@@ -10,6 +10,7 @@ const Stock = () => {
 
     const [products, setProducts] = useState([]);
     const [productsMap, setProductsMap] = useState(products);
+    const [categoryPro, setCategoryPro] = useState("Todos ") ; 
 
     const listProducts = async () =>{
         try{
@@ -36,6 +37,72 @@ const Stock = () => {
           setProductsMap(filter)
         }
       }
+    
+      const filterChange = () => {
+        const category = categoryPro
+
+        switch (category) {
+            case "Todos":
+        
+              break;
+            case "Aseo Personal":
+         
+              break;
+            
+            case "Carnicos":
+            
+              break;
+
+              case "Dulceria":
+         
+              break;
+
+              case "Embutidos":
+         
+              break;
+
+              case "Elementos de aseo":
+         
+              break;
+
+              case "Enlatados":
+         
+              break;
+
+              case "Frutas":
+         
+              break;
+
+              case "Granos":
+         
+              break;
+
+              case "Lacteos":
+         
+              break;
+
+              case "Licores":
+         
+              break;
+
+
+            default:
+            
+              break;
+          }
+        if (search === '') {
+            setProductsMap(products)
+        } else {
+          const filter = productsMap.filter(e => e.pro_name.toLowerCase().startsWith(search))
+          setProductsMap(filter)
+        }
+      }
+
+      const Menu = ()=>{
+       
+
+        
+      }
 
     return (
         <div className={styles.container}>
@@ -46,7 +113,25 @@ const Stock = () => {
                     placeholder={"Buscar producto"} 
                     type="search"/>
                     
-                <img src={Filtro} alt="Filtro" className={styles.Filtro}/>
+                <img src={Filtro} alt="Filtro" className={styles.Filtro} onClick={Menu()}/>
+
+                <div className={styles.Menu}>
+                           
+                    <div onClick={filterChange("Todos")}>Todos</div>
+                    <div onClick={filterChange("Aseo Personal")}>Aseo Personal</div>
+                    <div onClick={filterChange("Carnicos")}>Carnicos</div>
+                    <div onClick={filterChange("Desinfectantes")}>Desinfectantes</div>
+                    <div onClick={filterChange("Dulceria")}>Dulceria</div>
+                    <div onClick={filterChange("Embutidos")}>Embutidos</div>
+                    <div onClick={filterChange("Elementos de aseo")}>Elementos de aseo</div>
+                    <div onClick={filterChange("Enlatados")}>Enlatados</div>
+                    <div onClick={filterChange("Frutas")}>Frutas</div>
+                    <div onClick={filterChange("Todos")}>Granos</div>
+                    <div onClick={filterChange("Granos")}>Lacteos</div>
+                    <div onClick={filterChange("Licores")}>Licores</div>
+                
+                </div>
+
             </div>
             <div className={styles.products}>
                 {productsMap.map(element =>(
