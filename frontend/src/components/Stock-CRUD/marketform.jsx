@@ -2,7 +2,8 @@ import styles from '../Add-Products/Add.module.css'
 import Logo from '../../assets/Logo Merca Todo.png'
 import { useHistory, useParams } from "react-router";
 
-const Add = () => {
+const CompanyForm = () => {
+
 
   return (
     <div>
@@ -30,9 +31,10 @@ const Add = () => {
         <input className="form-control" minLength="2" maxLength="30" autoFocus required />
 
         <label for="exampleFormControlInput1" class="form-label">DESCRIPCION</label>
-        <input className="form-control" minLength="2" maxLength="50" autoFocus required />
+        <input className="form-control" minLength="2" maxLength="30" autoFocus required />
 
-        <label for="exampleFormControlInput1" class="form-label">CATEGORIA</label>
+
+        <label for="exampleFormControlInput1" class="form-label">DESCRIPCION</label>
         <input className="form-control" minLength="2" maxLength="30" autoFocus required />
         <div className="d-grid gap-2">
 
@@ -55,4 +57,4 @@ const Add = () => {
 
 }
 
-export default Add
+export default CompanyForm;
